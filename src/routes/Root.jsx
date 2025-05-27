@@ -141,7 +141,7 @@ export default function Root() {
       <main className="mb-12 mt-5 max-w-7xl mx-auto">
         {!isLoading && <Outlet />}
       </main>
-      <Footer fluid className="shadow-none">
+      <Footer fluid className="shadow-none text-center">
         <Footer.Copyright
           className="border-t-2 border-black10 w-11/12  mx-10 py-5 text-black60"
           href="#"

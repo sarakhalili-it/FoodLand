@@ -1,8 +1,8 @@
 export default function AboutUS() {
   return (
-    <div className="flex justify-between mt-16">
-      <div className="w-3/4">
-        <h1 className="text-2xl font-semibold font-lobester mb-10 ">
+    <div className="flex justify-between mt-16 flex-wrap lg:flex-nowrap">
+      <div className="lg:w-3/4">
+        <h1 className="text-2xl font-semibold font-lobester mb-10 pl-4">
           About us
         </h1>
         <p className="px-10 font-Inter text-justify text-base leading-7 ">
@@ -20,7 +20,7 @@ export default function AboutUS() {
           your delicious adventure with easy-to-follow, mouthwatering recipes!
         </p>
       </div>
-      <div>
+      <div className="m-auto pr-4">
         <img src="src/assets/img/chef.png" alt="Chef Pic" />
       </div>
     </div>
