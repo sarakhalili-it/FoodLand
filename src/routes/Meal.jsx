@@ -10,14 +10,14 @@ export default function Meal() {
   return (
     <section className="mt-11">
       <div>
-        <div className="flex justify-between items-center mb-14">
-          <div className="flex-grow">
-            <h1 className="font-Inter text-5xl font-semibold mb-11">
+        <div className="flex justify-between items-center mb-14 flex-wrap pl-2">
+          <div className="md:flex-grow">
+            <h1 className="font-Inter text-5xl font-semibold mb-11 max-w-4xl">
               {meal.name}
             </h1>
-            <ul className="flex items-center">
+            <ul className="flex items-center mb-4 flex-wrap">
               <Link to={`/categories/${meal.category}`}>
-                <li className="pr-7 flex items-center gap-2 cursor-pointer ">
+                <li className="px-7 flex items-center gap-2 cursor-pointer ">
                   <svg
                     width="24"
                     height="24"
@@ -37,14 +37,14 @@ export default function Meal() {
 
                   <span
                     className="font-Inter text-base
-                 font-medium text-black60  hover:text-secondery"
+                     font-medium text-black60  hover:text-secondery"
                   >
                     {meal.category}
                   </span>
                 </li>
               </Link>
               <Link to={`/areas/${meal.area}`}>
-                <li className="px-7 flex items-center gap-2 border-l border-r border-black10 cursor-pointer ">
+                <li className="px-7 flex items-center gap-2 sm:border-l sm:border-r border-black10 cursor-pointer ">
                   <svg
                     className="w-6 h-6 text-gray-800 dark:text-white "
                     aria-hidden="true"
@@ -63,7 +63,7 @@ export default function Meal() {
 
                   <span
                     className="font-Inter text-base
-                 font-medium text-black60  hover:text-secondery"
+                     font-medium text-black60  hover:text-secondery"
                   >
                     {meal.area}
                   </span>
@@ -72,7 +72,7 @@ export default function Meal() {
               {meal.tags &&
                 meal.tags.map((tag) => (
                   <li
-                    className="px-7 border-r border-black10 flex items-center gap-2 "
+                    className="px-7 sm:border-r border-black10 flex items-center  gap-2 "
                     key={tag}
                   >
                     <svg
@@ -88,7 +88,7 @@ export default function Meal() {
                     </svg>
                     <span
                       className="font-Inter text-base
-                 font-medium text-black60"
+                     font-medium text-black60"
                     >
                       {tag}
                     </span>
@@ -119,14 +119,14 @@ export default function Meal() {
             </a>
             <span
               className="font-Inter text-xs
-                 font-medium text-black60"
+                     font-medium text-black60"
             >
               Watch
             </span>
           </div>
         </div>
-        <div className="flex justify-between gap-7 items-start ">
-          <div className="w-8/12 ">
+        <div className="flex justify-between gap-7 items-start flex-wrap md:flex-nowrap mx-3">
+          <div className="md:w-8/12 ">
             <div className="h-600 rounded-3xl">
               <img
                 className="w-full h-full object-cover rounded-3xl"
@@ -134,7 +134,7 @@ export default function Meal() {
                 alt={meal.name}
               />
             </div>
-            <div className="mt-10">
+            <div className="mt-10 ">
               <h2 className="font-Inter font-semibold text-2xl mb-2">
                 Instructions
               </h2>
@@ -143,7 +143,7 @@ export default function Meal() {
               </p>
             </div>
           </div>
-          <div className="bg-primary rounded-3xl w-4/12  p-8">
+          <div className="bg-primary rounded-3xl md:w-4/12  w-full p-8">
             <h2 className="font-Inter font-semibold text-2xl mb-2">
               Ingredients
             </h2>

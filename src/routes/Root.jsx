@@ -18,7 +18,7 @@ export default function Root() {
   const isLoading = navigation.state === "loading";
   return (
     <>
-      <header className="border-b-2 border-black10">
+      <header className="border-b-2 border-black10 ">
         <Navbar fluid rounded className="mx-16 py-5" theme={customNavLinkTheme}>
           <Navbar.Brand href="/">
             <span className="self-center whitespace-nowrap text-2xl font-semibold font-lobester">
